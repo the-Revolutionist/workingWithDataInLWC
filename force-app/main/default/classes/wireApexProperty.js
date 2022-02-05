@@ -1,1 +1,0 @@
-import { LightningElement } from 'lwc';
