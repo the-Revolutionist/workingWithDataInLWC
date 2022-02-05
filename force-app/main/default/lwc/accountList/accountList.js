@@ -12,7 +12,7 @@ const COLUMNS = [
 ]
 
 export default class AccountList extends LightningElement {
-    colomns = COLUMNS;
+    columns = COLUMNS;
     @wire(getAccounts)
     accounts;
 }
