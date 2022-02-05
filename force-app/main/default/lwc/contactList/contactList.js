@@ -11,5 +11,7 @@ const COLUMNS = [
     { label: 'Email', fieldName: EMAIL_FIELD.fieldApiName, type: 'text' },    
 ]
 export default class ContactList extends LightningElement {
-    
+    columns = COLUMNS;
+    @wire(getContacts)
+    contacts;
 }

@@ -1,11 +1,11 @@
-public with sharing class AccountController {
+public with sharing class ContactController {
     @AuraEnabled(cacheable=true)
-    public static List<Account> getAccounts() {
+    public static List<Contact> getContacts(){
         return[
-            SELECT Name, AnnualRevenue, Industry
-            FROM Account
+            SELECT FirstName, LastName, Email
+            FROM Contact
             WITH SECURITY_ENFORCED
-            ORDER BY Name
+            ORDER BY LastName
         ];
     }
-};;.
+}
