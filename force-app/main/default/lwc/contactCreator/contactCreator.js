@@ -13,7 +13,8 @@ export default class ContactCreator extends LightningElement {
             title: "Contact created",
             message: `Email:  + ${event.detail.email}` + "/n" +
             `Email :  + ${event.detail.email}` + "/n" +
-            `Email :  + ${event.detail.email}`,
+            `Email :  + ${event.detail.email}`+"/n"+
+            `Email :  + ${event.detail.id}`,
             variant: "success"
         });
         this.dispatchEvent(toastEvent);
